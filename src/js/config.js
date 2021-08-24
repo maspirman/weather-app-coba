@@ -13,7 +13,7 @@ const appConfig = {
         latlon : { path: 'weather', params: ['lat', 'lon'] }, //?lat={lat}&lon={lon}
       },
     },
-    apiKey: '0f034f0e9216aaa8ed94c3d87af01e18',
+    apiKey: 'abc4376c0c3836d72cde39fae90720fc',
     apiParamName: 'APPID',
     iconUrl: 'http://openweathermap.org/img/w/',
     iconExt: '.png',
