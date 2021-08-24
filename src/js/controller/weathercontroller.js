@@ -50,7 +50,9 @@ export default class WeatherController extends AppUiControllerComponent {
       data.windSpeedUnits = this.dependencies.Services.SettingsService.windSpeedUnits;
       data.date = new Date(data.dt * 1000);
       data.cityFull = data.geocity + ',' + data.geocountry;
-      data.geoFull = data.geolon + ',' + data.geolat;
+      data.geoFull = data.geolat + ',' + data.geolon;
+      data.urlo ='https://www.google.com/maps/place/';
+      data.urlGeo = data.urlo + data.geoFull;
 
       // create references to today weather HTML elements if not yet
       if (!this._elWeatherToday) {
