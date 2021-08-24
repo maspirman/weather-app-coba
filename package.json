@@ -1,0 +1,29 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "Weather Web App coba",
+  "main": "./src/index.html",
+  "repository": "#",
+  "author": "Firmanda Himawan <masryuxendo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "cssnano": "^5.0.8",
+    "fs-extra": "^5.0.0",
+    "postcss": "^8.3.6"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "prebuild-dev": "node node.prebuild.js",
+    "build-dev": "parcel build ./src/index.html --no-minify --public-url ./",
+    "prebuild": "node node.prebuild.js",
+    "build": "parcel build ./src/index.html --public-url ./"
+  },
+  "dependencies": {
+    "idb": "^2.0.4"
+  }
+}
